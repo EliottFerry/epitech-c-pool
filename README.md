@@ -14,7 +14,8 @@ I'll still follow most of Epitech C-Pool rules which are:
 * Not using any functions of the standard C library (apart from the one specified on the subject)
 * Having a clean valgrind
 * **Have fun!**
-  
+
+The last change that I'll do is that if I can improve a function to make it more usable, I'll do it, even if I have to change the prototype of the function (such as the function `str_to_word_array`)
 
 ## How to run it
 After cloning the repository, just go in the day you want and run 
