@@ -1,4 +1,4 @@
-# epitech-c-pool
+# Epitech C-Pool
 
 ## Exercice list
 The list of all the exercices can be found [here](https://clement-fernandes.github.io/epitech-subjects-website/docs/category/b-cpe-100).
