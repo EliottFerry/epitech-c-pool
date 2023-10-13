@@ -6,7 +6,7 @@ SRC=$(wildcard *.c ../utils/*.c)
 CDFLAGS=-W -Wall -Werror -L $(LIBMY) -l $(LIBNAME) 
 OBJ = $(SRC:.c=.o)
 
-NAME=day-08
+NAME=day-12
 
 all: $(NAME)
 
