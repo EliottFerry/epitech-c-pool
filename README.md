@@ -12,6 +12,7 @@ I'll still follow most of Epitech C-Pool rules which are:
 * Respect coding style (as much as I can)
 * Not looking on google for any solutions, I have to figure everything on my own
 * Not using any functions of the standard C library (apart from the one specified on the subject)
+* Having a clean valgrind
 * **Have fun!**
   
 
