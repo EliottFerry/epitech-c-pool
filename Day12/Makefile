@@ -2,8 +2,8 @@ CC=gcc
 UTILS=../utils
 LIBMY=$(UTILS)/lib/my
 LIBNAME=my
-SRC=$(wildcard *.c ../utils/*.c)
-CDFLAGS=-W -Wall -Werror -L $(LIBMY) -l $(LIBNAME) 
+SRC=$(wildcard *.c ./cat/*.c ../utils/*.c)
+CFLAGS=-W -Wall -Werror -L $(LIBMY) -l $(LIBNAME) -I $(UTILS) -I $(UTILS)/include
 OBJ = $(SRC:.c=.o)
 
 NAME=day-12
@@ -11,9 +11,8 @@ NAME=day-12
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@cd $(UTILS)/lib/my; \
-        ./build.sh
-	@$(CC) -o $(NAME) $(SRC) $(CDFLAGS)
+	make -C $(LIBMY)
+	@$(CC) -o $(NAME) $(SRC) $(CFLAGS)
 
 clean:
 	@find . $(UTILS) -name "*.o" -delete\
@@ -24,6 +23,6 @@ clean:
         -o -name "#*#" -delete
 
 fclean: clean
-	@rm $(NAME)
-
+	@rm -f $(NAME)
+	make fclean -C $(LIBMY)
 re: fclean all

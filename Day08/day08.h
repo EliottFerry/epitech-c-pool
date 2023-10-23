@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stddef.h>
 #include <unistd.h>
-#include "../utils/utils.h"
+#include "utils.h"
 
 char **str_to_word_array(char const *str, char const *separators);
 
