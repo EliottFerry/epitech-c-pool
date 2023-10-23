@@ -9,10 +9,6 @@ void print_n_char(char const *str, int n)
 
 int main(void)
 {
-    char *test = "Hello";
-    printf("%c\n", *++test);
-    printf("%c\n", *test);
-
     char src[] = "Hello World!";
     char needle[] = "World";
     char *dest = malloc((my_strlen(src) + 1) * sizeof(char));
